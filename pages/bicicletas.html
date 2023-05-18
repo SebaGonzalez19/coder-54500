@@ -21,20 +21,8 @@
   </head>
   <body>
     <header>
-      <nav class="nav-container">
-        <ul class="nav">
-          <li><a href="../index.html">WorldBike</a></li>
-        </ul>
-        <ul class="nav">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="bicicletas.html">Bicicletas</a></li>
-          <li><a href="./accesorios.html">Accesorios</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="./unete.html">Únete</a></li>
-        </ul>
-      </nav>
       <!-- menu de navegacion responsive -->
-      <nav class="navbar">
+      <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">WorldBike</a>
           <button
@@ -45,7 +33,7 @@
             aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list"></i>
           </button>
           <div
             class="offcanvas offcanvas-end"
@@ -67,24 +55,19 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../index.html"
-                    >WorldBike</a
-                  >
+                  <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./bicicletas.html">Bicicletas</a>
+                  <a class="nav-link" href="bicicletas.html">Bicicletas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                  <a class="nav-link" href="accesorios.html">Accesorios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./unete.html">Unete</a>
+                  <a class="nav-link" href="unete.html">Unete</a>
                 </li>
               </ul>
             </div>
@@ -93,9 +76,9 @@
       </nav>
     </header>
     <main>
-      <h1>Bienvenidos a nuestras Bicicletas</h1>
+      <h1 class="welcome">Bienvenidos a nuestras Bicicletas</h1>
+      <h2 class="title_bike">Bicicletas MTB</h2>
       <section class="bike">
-        <!-- <h2>Bicicletas MTB</h2> -->
         <div class="bike-body">
           <img
             src="../assets/bicis-mtb/BICICLETA-SCOTT-SCALE-930.jpg"
@@ -178,7 +161,7 @@
             src="../assets/bicis-mtb/Spark-RC-900-Comp-2022.jpg"
             alt="Bicicleta Spark Rc 900 comp 2022"
           />
-          <h2>Spark Rc 900 comp2022</h2>
+          <h2>Spark Rc 900 2022</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
             dolorem qui vel corporis vitae ad ut esse perferendis ea deserunt.
@@ -228,7 +211,9 @@
             dolorem qui vel corporis vitae ad ut esse perferendis ea deserunt.
           </p>
         </div>
-        <h2 id="ruta">Bicicletas para Ruta</h2>
+      </section>
+      <h2 class="title_bike" id="ruta">Bicicletas para Ruta</h2>
+      <section class="bike">
         <div class="bike-body">
           <img
             src="../assets/bicis-ruta/bicicleta_trek_speed_concept_srl_7_2023.webp"
@@ -300,7 +285,7 @@
             src="../assets/bicis-ruta/SCOTT-Addict-Gravel-20-2021.jpg"
             alt="Bicicleta Scott Addict Gravel 2021"
           />
-          <h2>Scott Addict Gravel 2021</h2>
+          <h2>Scott Addict 2021</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
             dolorem qui vel corporis vitae ad ut esse perferendis ea deserunt.
@@ -328,7 +313,9 @@
             dolorem qui vel corporis vitae ad ut esse perferendis ea deserunt.
           </p>
         </div>
-        <h2 id="paseo">Bicicletas para paseos</h2>
+      </section>
+      <h2 class="title_bike" id="paseo">Bicicletas para paseos</h2>
+      <section class="bike">
         <div class="bike-body">
           <img
             src="../assets/bicis-paseo/trek_dualsport2_22.webp"

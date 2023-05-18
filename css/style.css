@@ -36,31 +36,6 @@ header {
   position: sticky;
   top: 0%;
 }
-nav {
-  background-color: #1d3461ff;
-  padding: 15px;
-  z-index: 3;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav {
-  list-style-type: none;
-  text-align: right;
-}
-
-.nav li {
-  display: inline-block;
-  padding: 5px;
-  margin: 0px 4px;
-  border: 2px solid #e0ffffff;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: transform 0.3s ease-in-out;
-}
-.nav li:hover {
-  transform: scale(1.2);
-}
 
 .navbar {
   background-color: #1d3461ff;
@@ -72,13 +47,21 @@ nav {
 
 .navbar-brand {
   color: white;
-  font-size: large;
-  display: inline-block;
-  padding: 5px;
-  margin: 0px 4px;
-  border: 2px solid #e0ffffff;
-  border-radius: 5px;
   font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.offcanvas-title {
+  color: #ffffff;
+}
+
+.offcanvas-title:hover {
+  color: #ffffff;
 }
 
 .navbar-toggler {
@@ -107,20 +90,13 @@ nav {
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: rgba(138, 138, 218, 0.493);
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
 }
 
-.navbar-nav .nav-link.active {
-  background-color: rgba(138, 138, 218, 0.493);
-}
-
-.navbar-brand {
-  padding: 5px;
-  margin: 0px 4px;
-  border: 2px solid #e0ffffff;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
+.bi-list {
+  font-size: 25px;
   color: white;
 }
 
@@ -259,6 +235,8 @@ footer {
 
 /*BICICLETAS*/
 .bike {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   padding: 50px 15px;
 }
@@ -266,6 +244,13 @@ footer {
   text-align: left;
   font-weight: bold;
 }
+
+.title_bike {
+  padding: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
 .bike-body img {
   border-top-left-radius: 3%;
   border-top-right-radius: 3%;
@@ -273,9 +258,11 @@ footer {
   border-bottom-right-radius: 2%;
   object-fit: cover;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 .bike-body {
+  width: 500px;
+  height: 480px;
   border-radius: 3%;
   display: inline-block;
   width: 30%;
@@ -326,34 +313,5 @@ footer {
   }
   .caja {
     width: 150px;
-  }
-}
-
-@media (min-width: 660px) {
-  .navbar-toggler {
-    display: none;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  .offcanvas {
-    display: none;
-  }
-}
-@media (max-width: 660px) {
-  .nav-container {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav li {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav li:hover {
-    transform: scale(1);
   }
 }
