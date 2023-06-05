@@ -1,0 +1,49 @@
+.bike {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 15px;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+.title_bike {
+  padding: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.bike-body {
+  width: 500px;
+  height: 550px;
+  border-radius: 3%;
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  margin: 10px;
+  background-color: #376996ff;
+
+  img {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+  }
+
+  h2 {
+    padding: 5px;
+    color: white;
+  }
+
+  p {
+    padding: 5px;
+    color: white;
+  }
+}

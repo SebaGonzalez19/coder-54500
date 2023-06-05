@@ -1,0 +1,89 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+/* CSS HEX 
+--light-cyan: #e0ffffff;
+--delft-blue: #1d3461ff;
+--polynesian-blue: $main-color;
+--lapis-lazuli: #376996ff;
+--silver-lake-blue: #6290c8ff; */
+body {
+  font-family: "Roboto", sans-serif;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header {
+  position: sticky;
+  top: 0%;
+}
+
+.navbar {
+  background-color: #1d3461ff;
+}
+
+.offcanvas-body {
+  background-color: #1d3461ff;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+
+  &:hover {
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+  }
+}
+
+.offcanvas-title .navbar-toggler {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.offcanvas-header {
+  background-color: #1d3461ff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.offcanvas-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.btn-close-white {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.bi-list {
+  font-size: 25px;
+  color: white;
+}

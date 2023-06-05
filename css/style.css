@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* 
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif; 
@@ -12,10 +13,9 @@ font-family: 'Roboto', sans-serif;
 /* CSS HEX 
 --light-cyan: #e0ffffff;
 --delft-blue: #1d3461ff;
---polynesian-blue: #1f487eff;
+--polynesian-blue: $main-color;
 --lapis-lazuli: #376996ff;
---silver-lake-blue: #6290c8ff;
-/* GENERAL */
+--silver-lake-blue: #6290c8ff; */
 body {
   font-family: "Roboto", sans-serif;
   background: #7f7fd5; /* fallback for old browsers */
@@ -32,51 +32,46 @@ body {
     #7f7fd5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 header {
   position: sticky;
   top: 0%;
 }
 
 .navbar {
-  background-color: #1d3461ff;
+  background-color: #1d3461;
 }
 
 .offcanvas-body {
-  background-color: #1d3461ff;
+  background-color: #1d3461;
 }
 
 .navbar-brand {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
 }
-
 .navbar-brand:hover {
   color: white;
   border-bottom: 2px solid white;
   padding-bottom: 10px;
 }
 
-.offcanvas-title {
-  color: #ffffff;
-}
-
-.offcanvas-title:hover {
-  color: #ffffff;
-}
-
-.navbar-toggler {
+.offcanvas-title .navbar-toggler {
   color: #ffffff;
   border-color: #ffffff;
 }
 
 .offcanvas-header {
-  background-color: #1d3461ff;
+  background-color: #1d3461;
   border-bottom: 1px solid #ffffff;
 }
 
 .offcanvas-title {
   color: #ffffff;
   font-size: 1.5rem;
+}
+.offcanvas-title:hover {
+  color: #ffffff;
 }
 
 .btn-close-white {
@@ -101,7 +96,7 @@ header {
 }
 
 .buttons {
-  background-color: #1f487eff;
+  background-color: #1f487e;
   padding: 3px;
   display: flex;
   justify-content: center;
@@ -110,14 +105,12 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-
 .buttons a {
   text-align: center;
   font-size: 20px;
   margin: 10px;
   transition: transform 0.3s ease;
 }
-
 .buttons a:hover {
   transform: scale(1.7);
 }
@@ -130,13 +123,12 @@ a {
 footer {
   color: #ffffff;
   text-align: center;
-  background-color: #1f487eff;
+  background-color: #1f487e;
   padding: 5px;
   bottom: 0;
   width: 100%;
 }
 
-/*INDEX*/
 .welcome {
   color: rgb(0, 0, 0);
   text-align: left;
@@ -158,23 +150,19 @@ footer {
   gap: 20px;
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(auto, 500px);
-  grid-template-areas:
-    "area1 area2 area3"
-    "area4 area5 area6";
+  grid-template-areas: "area1 area2 area3" "area4 area5 area6";
   padding: 30px;
 }
-
-.caja {
+.grilla .caja {
   width: 100%;
   height: 100%;
-  background-color: #376996ff;
+  background-color: #376996;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
 }
-
-.caja img {
+.grilla .caja img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -183,60 +171,74 @@ footer {
   border-bottom-left-radius: 2%;
   border-bottom-right-radius: 2%;
 }
-
-.caja h2 {
+.grilla .caja h2 {
   color: white;
   text-align: left;
   font-weight: bold;
 }
-
-.c1 {
+.grilla .caja.c1 {
   grid-area: area1;
   display: flex;
   flex-direction: column;
 }
-
-.c1 .c2 .c3 .c4 .c5 .c6 div {
+.grilla
+  .caja.c1
+  .grilla
+  .caja.c2
+  .grilla
+  .caja.c3
+  .grilla
+  .caja.c4
+  .grilla
+  .caja.c5
+  .grilla
+  .caja.c6
+  div {
   padding: 10px;
 }
-
-.c1 .c2 .c3 .c4 .c5 .c6 img {
+.grilla
+  .caja.c1
+  .grilla
+  .caja.c2
+  .grilla
+  .caja.c3
+  .grilla
+  .caja.c4
+  .grilla
+  .caja.c5
+  .grilla
+  .caja.c6
+  img {
   width: 100%;
   height: 440px;
   object-fit: cover;
 }
-
-.c2 {
+.grilla .caja.c2 {
   grid-area: area2;
   display: flex;
   flex-direction: column;
 }
-
-.c3 {
+.grilla .caja.c3 {
   grid-area: area3;
   display: flex;
   flex-direction: column;
 }
-
-.c4 {
+.grilla .caja.c4 {
   grid-area: area4;
   display: flex;
   flex-direction: column;
 }
-
-.c5 {
+.grilla .caja.c5 {
   grid-area: area5;
   display: flex;
   flex-direction: column;
 }
-
-.c6 {
+.grilla .caja.c6 {
   grid-area: area6;
   display: flex;
   flex-direction: column;
 }
 
-/*BICICLETAS*/
 .bike {
   display: flex;
   flex-wrap: wrap;
@@ -255,6 +257,16 @@ footer {
   font-weight: bold;
 }
 
+.bike-body {
+  width: 500px;
+  height: 550px;
+  border-radius: 3%;
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  margin: 10px;
+  background-color: #376996;
+}
 .bike-body img {
   border-top-left-radius: 3%;
   border-top-right-radius: 3%;
@@ -264,24 +276,15 @@ footer {
   width: 100%;
   height: 400px;
 }
-.bike-body {
-  width: 500px;
-  height: 550px;
-  border-radius: 3%;
-  display: inline-block;
-  width: 30%;
-  text-align: left;
-  margin: 10px;
-  background-color: #376996ff;
+.bike-body h2 {
+  padding: 5px;
+  color: white;
 }
-.bike-body h2,
 .bike-body p {
   padding: 5px;
   color: white;
 }
-/*ACCESORIOS*/
-/*NOSOTROS*/
-/*UNETE*/
+
 .formulario {
   display: flex;
   flex-direction: column;
@@ -295,8 +298,6 @@ footer {
   height: 50px;
   width: 700px;
 }
-
-/* mediaqueries */
 
 @media (max-width: 900px) {
   .bike {
@@ -313,13 +314,11 @@ footer {
     object-fit: cover;
   }
 }
-
 @media (max-width: 800px) {
   .form-floating {
     width: 100%;
   }
 }
-
 @media (max-width: 660px) {
   .grilla {
     display: flex;
@@ -332,3 +331,5 @@ footer {
     width: 150px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
