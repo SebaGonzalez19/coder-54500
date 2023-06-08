@@ -1,70 +1,58 @@
-/* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif; 
-*/
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #dddddd;
-}
-header {
-  position: sticky;
-  top: 0%;
-}
-
 .navbar {
   background-color: $main-color;
   border-bottom: 4px solid #dddddd;
-}
 
-.offcanvas-body {
-  background-color: $main-color;
-}
-
-.navbar-brand {
-  color: $white-color;
-  font-weight: bold;
-
-  &:hover {
+  &-brand {
     color: $white-color;
-    border-bottom: 2px solid $white-color;
-    padding-bottom: 10px;
+    font-weight: bold;
+
+    &:hover {
+      color: $white-color;
+      border-bottom: 2px solid $white-color;
+      padding-bottom: 10px;
+    }
+  }
+
+  &-nav .nav-link {
+    color: $white-color;
+    font-size: 1.25rem;
+    padding: 1rem;
+
+    :hover {
+      color: $white-color;
+      border-bottom: 2px solid $white-color;
+      padding-bottom: 10px;
+    }
   }
 }
 
-.offcanvas-title .navbar-toggler {
-  color: $white-color;
-  border-color: $white-color;
-}
-
-.offcanvas-header {
-  background-color: $main-color;
-  border-bottom: 1px solid $white-color;
-}
-
-.offcanvas-title {
-  color: $white-color;
-  font-size: 1.5rem;
-
-  &:hover {
+.offcanvas {
+  &-title {
     color: $white-color;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+  &-body {
+    background-color: $main-color;
+  }
+
+  &-title .navbar-toggler {
+    color: $white-color;
+    border-color: $white-color;
+  }
+
+  &-header {
+    background-color: $main-color;
+    border-bottom: 1px solid $white-color;
   }
 }
 
 .btn-close-white {
   color: $white-color;
-}
-
-.navbar-nav .nav-link {
-  color: $white-color;
-  font-size: 1.25rem;
-  padding: 1rem;
-}
-
-.navbar-nav .nav-link:hover {
-  color: $white-color;
-  border-bottom: 2px solid $white-color;
-  padding-bottom: 10px;
 }
 
 .bi-list {

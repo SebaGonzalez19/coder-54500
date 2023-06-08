@@ -1,15 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
 /*resetear sitio web*/
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif; 
-*/
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #dddddd;
@@ -24,11 +32,6 @@ header {
   background-color: #191919;
   border-bottom: 4px solid #dddddd;
 }
-
-.offcanvas-body {
-  background-color: #191919;
-}
-
 .navbar-brand {
   color: #ffffff;
   font-weight: bold;
@@ -38,15 +41,15 @@ header {
   border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
 }
-
-.offcanvas-title .navbar-toggler {
+.navbar-nav .nav-link {
   color: #ffffff;
-  border-color: #ffffff;
+  font-size: 1.25rem;
+  padding: 1rem;
 }
-
-.offcanvas-header {
-  background-color: #191919;
-  border-bottom: 1px solid #ffffff;
+.navbar-nav .nav-link :hover {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
 }
 
 .offcanvas-title {
@@ -56,21 +59,20 @@ header {
 .offcanvas-title:hover {
   color: #ffffff;
 }
+.offcanvas-body {
+  background-color: #191919;
+}
+.offcanvas-title .navbar-toggler {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.offcanvas-header {
+  background-color: #191919;
+  border-bottom: 1px solid #ffffff;
+}
 
 .btn-close-white {
   color: #ffffff;
-}
-
-.navbar-nav .nav-link {
-  color: #ffffff;
-  font-size: 1.25rem;
-  padding: 1rem;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
-  padding-bottom: 10px;
 }
 
 .bi-list {
@@ -119,6 +121,11 @@ footer {
   display: flex;
   justify-content: center;
   padding: 20px;
+}
+
+.carousel img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .destacados {
@@ -198,15 +205,28 @@ footer {
   flex-direction: column;
 }
 
-.accesorios {
+.tips {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #191919;
+}
+.tips-body {
+  margin: 10px;
+}
+
+.accesorios {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
   padding: 50px 15px;
 }
 .accesorios-body {
   width: 500px;
+  border: 3px solid #191919;
   border-radius: 3%;
   display: inline-block;
   width: 30%;
@@ -234,13 +254,14 @@ footer {
 
 .bike {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
   padding: 50px 15px;
 }
 .bike-body {
   width: 500px;
+  border: 3px solid #191919;
   border-radius: 3%;
   display: inline-block;
   width: 30%;
@@ -277,6 +298,7 @@ footer {
   flex-direction: column-reverse;
   align-items: center;
   background-color: #191919;
+  border-radius: 10px;
   font-size: 25px;
   padding: 100px 0px;
   margin: 100px 10%;
@@ -301,7 +323,7 @@ footer {
   border-radius: 7px;
 }
 
-.card-grid {
+.card-grid, .card-grid-b2 {
   margin: 100px 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -312,19 +334,19 @@ footer {
   justify-content: space-between;
   align-content: space-between;
   gap: 15px;
-  border-radius: 5%;
+  border-radius: 10px;
   background-color: #191919;
   color: rgba(238, 238, 238, 0.9333333333);
   box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.589);
 }
-.card-grid img {
+.card-grid img, .card-grid-b2 img {
   grid-area: img;
   width: 100%;
   height: 400px;
   margin-left: 10px;
   object-fit: cover;
 }
-.card-grid h2 {
+.card-grid h2, .card-grid-b2 h2 {
   grid-area: titulo;
   padding: 15px;
   font-size: 30px;
@@ -336,35 +358,12 @@ footer {
 }
 
 .card-grid-b2 {
-  margin: 100px 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
   grid-template-areas: "titulo titulo map" "descrip descrip map";
-  justify-items: start;
-  align-items: center;
-  justify-content: space-between;
-  align-content: space-between;
-  gap: 15px;
-  border-radius: 5%;
-  background-color: #191919;
-  color: rgba(238, 238, 238, 0.9333333333);
-  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.589);
 }
 .card-grid-b2 iframe {
   grid-area: map;
   height: 400px;
-  margin-right: 10px;
-}
-.card-grid-b2 h2 {
-  grid-area: titulo;
-  padding: 15px;
-  font-size: 30px;
-}
-.card-grid-b2-description {
-  grid-area: descrip;
-  padding: 10px;
-  font-size: 24px;
+  margin: 10px;
 }
 
 @media (max-width: 1300px) {
@@ -414,9 +413,14 @@ footer {
   .form-floating {
     width: 100%;
   }
-}
-@media (max-width: 768px) {
-  .card-grid {
+  .card-grid, .card-grid-b2 {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-grid-b2 {
     display: flex;
     flex-direction: column;
     padding: 5%;

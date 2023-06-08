@@ -7,6 +7,13 @@
   padding: 20px;
 }
 
+.carousel {
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
 .destacados {
   color: rgb(0, 0, 0);
   text-align: left;
@@ -96,5 +103,18 @@
       display: flex;
       flex-direction: column;
     }
+  }
+}
+
+.tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: $main-color;
+
+  &-body {
+    margin: 10px;
   }
 }

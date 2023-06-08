@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubre los mejores productos de bicicletas y accesorios en World Bike. Encuentra bicicletas de alta calidad, cascos, luces y mucho más para tu experiencia ciclista."
+    />
+    <meta
+      name="keywords"
+      content="bicicletas, accesorios para bicicletas, cascos de bicicleta, luces para bicicletas, tienda de bicicletas, World Bike"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
@@ -14,6 +22,12 @@
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
     />
     <!-- link a css -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -83,6 +97,69 @@
     <!--main: contenido-->
     <main>
       <h1 class="welcome">Bienvenidos a WorldBike</h1>
+      <section class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/worldBike.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/worldBike1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/worldBike2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
       <h2 class="destacados">Productos destacados</h2>
       <section class="grilla">
         <div class="caja c1">
@@ -125,9 +202,20 @@
           <h2>Trek Speed 7 2022</h2>
         </div>
       </section>
-      <section>
-        <h2>Tips para mecanica de biciletas</h2>
+      <h2 class="destacados">Tips para mecanica de biciletas</h2>
+      <section class="tips">
         <iframe
+          class="tips-body"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/_eSoOcKwE_4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="tips-body"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/-C9EOW-lxr4"
