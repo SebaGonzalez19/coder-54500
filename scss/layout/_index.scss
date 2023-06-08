@@ -1,3 +1,7 @@
+header {
+  z-index: 1;
+}
+
 .welcome {
   color: rgb(0, 0, 0);
   text-align: left;
@@ -8,7 +12,6 @@
 }
 
 .carousel {
-  z-index: 0;
   img {
     object-fit: cover;
     object-position: center;
@@ -24,6 +27,7 @@
 
 .grilla {
   display: grid;
+  justify-items: center;
   gap: 20px;
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(auto, 500px);
