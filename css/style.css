@@ -46,7 +46,7 @@ header {
   font-size: 1.25rem;
   padding: 1rem;
 }
-.navbar-nav .nav-link :hover {
+.navbar-nav .nav-link:hover {
   color: #ffffff;
   border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
@@ -123,6 +123,9 @@ footer {
   padding: 20px;
 }
 
+.carousel {
+  z-index: 0;
+}
 .carousel img {
   object-fit: cover;
   object-position: center;
