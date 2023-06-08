@@ -2,27 +2,10 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif; 
 */
-/* CSS HEX 
---light-cyan: #e0ffffff;
---delft-blue: #1d3461ff;
---polynesian-blue: $main-color;
---lapis-lazuli: #376996ff;
---silver-lake-blue: #6290c8ff; */
+
 body {
   font-family: "Roboto", sans-serif;
-  background: #7f7fd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #dddddd;
 }
 header {
   position: sticky;
@@ -30,60 +13,61 @@ header {
 }
 
 .navbar {
-  background-color: #1d3461ff;
+  background-color: $main-color;
+  border-bottom: 4px solid #dddddd;
 }
 
 .offcanvas-body {
-  background-color: #1d3461ff;
+  background-color: $main-color;
 }
 
 .navbar-brand {
-  color: #ffffff;
+  color: $white-color;
   font-weight: bold;
 
   &:hover {
-    color: white;
-    border-bottom: 2px solid white;
+    color: $white-color;
+    border-bottom: 2px solid $white-color;
     padding-bottom: 10px;
   }
 }
 
 .offcanvas-title .navbar-toggler {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: $white-color;
+  border-color: $white-color;
 }
 
 .offcanvas-header {
-  background-color: #1d3461ff;
-  border-bottom: 1px solid #ffffff;
+  background-color: $main-color;
+  border-bottom: 1px solid $white-color;
 }
 
 .offcanvas-title {
-  color: #ffffff;
+  color: $white-color;
   font-size: 1.5rem;
 
   &:hover {
-    color: #ffffff;
+    color: $white-color;
   }
 }
 
 .btn-close-white {
-  color: #ffffff;
+  color: $white-color;
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff;
+  color: $white-color;
   font-size: 1.25rem;
   padding: 1rem;
 }
 
 .navbar-nav .nav-link:hover {
-  color: white;
-  border-bottom: 2px solid white;
+  color: $white-color;
+  border-bottom: 2px solid $white-color;
   padding-bottom: 10px;
 }
 
 .bi-list {
   font-size: 25px;
-  color: white;
+  color: $white-color;
 }
