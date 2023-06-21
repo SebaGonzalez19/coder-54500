@@ -29,6 +29,11 @@
       sizes="32x32"
       href="../assets/favicon-32x32.png"
     />
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <!-- link a css -->
     <link rel="stylesheet" href="../css/style.css" />
     <title>WorldBike</title>
@@ -92,34 +97,55 @@
     <main>
       <h1 class="welcome">Contactanos</h1>
 
-      <form class="form">
-        <fiedset>
-          <div class="form-body">
-            <label class="label" for="nombre">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre" />
+      <div class="content">
+        <div class="contact-wrapper animated bounceInUp">
+          <div class="contact-form">
+            <h3>Contact</h3>
+            <form action="">
+              <p>
+                <label>Name</label>
+                <input type="text" name="name" />
+              </p>
+              <p>
+                <label>Email Adress</label>
+                <input type="email" name="email" />
+              </p>
+              <p>
+                <label>Phone Number</label>
+                <input type="tel" name="phone" />
+              </p>
+              <p>
+                <label>Affair</label>
+                <input type="text" name="affair" />
+              </p>
+              <p class="block">
+                <label>Message</label>
+                <textarea name="message" rows="3"></textarea>
+              </p>
+              <p class="block">
+                <button>Send</button>
+              </p>
+            </form>
           </div>
-
-          <div class="form-body">
-            <label class="label" for="mail">Mail:</label>
-            <input type="text" name="mail" placeholder="Ingresa tu mail" />
+          <div class="contact-info">
+            <h4>More Info</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> Godoy Cruz, Mendoza</li>
+              <li><i class="fas fa-phone"></i> (261) 000-1919</li>
+              <li>
+                <i class="fas fa-envelope-open-text"></i> worldbike@gmail.com
+              </li>
+            </ul>
+            <p>
+              ¡Estamos encantados de recibir tu mensaje en World Bike! Nos
+              apasiona el mundo de las bicicletas y estamos aquí para responder
+              a todas tus consultas y comentarios. Completa el formulario y te
+              responderemos lo antes posible.
+            </p>
+            <p>WorldBike.com</p>
           </div>
-
-          <div class="form-body">
-            <label class="label" for="mensaje">Mensaje:</label>
-            <textarea
-              name="mensaje"
-              id=""
-              cols="20"
-              rows="3"
-              placeholder="Deje su mensaje"
-            ></textarea>
-          </div>
-          <div class="form-boton">
-            <button type="submit">Enviar</button>
-            <button type="reset">Resetear</button>
-          </div>
-        </fiedset>
-      </form>
+        </div>
+      </div>
     </main>
     <footer>
       <section class="buttons">

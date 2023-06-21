@@ -5,23 +5,31 @@
   &-brand {
     color: $white-color;
     font-weight: bold;
+    padding: 10px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size 0.3s;
 
     &:hover {
       color: $white-color;
-      border-bottom: 2px solid $white-color;
-      padding-bottom: 10px;
+      background-image: linear-gradient($white-color, $white-color);
+      background-size: 100% 2px;
     }
   }
 
   &-nav .nav-link {
     color: $white-color;
     font-size: 1.25rem;
-    padding: 1rem;
+    padding: 10px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size 0.3s;
 
     &:hover {
-      color: $white-color;
-      border-bottom: 2px solid $white-color;
-      padding-bottom: 10px;
+      background-image: linear-gradient($white-color, $white-color);
+      background-size: 100% 2px;
     }
   }
 }

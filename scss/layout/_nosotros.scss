@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-content: space-between;
   gap: 15px;
+  padding: 10px;
   border-radius: 10px;
   background-color: $main-color;
   color: #eeee;
@@ -19,7 +20,8 @@
   img {
     grid-area: img;
     width: 100%;
-    height: 400px;
+    height: 100%;
+    border-radius: 10px;
     margin-left: 10px;
     object-fit: cover;
   }
@@ -45,7 +47,8 @@
 
   iframe {
     grid-area: map;
-    height: 400px;
-    margin: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
   }
 }

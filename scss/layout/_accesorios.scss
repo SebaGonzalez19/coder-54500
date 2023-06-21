@@ -11,6 +11,10 @@
     text-align: left;
     margin: 10px;
     background-color: $main-color;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
 
     img {
       border-top-left-radius: 3%;
